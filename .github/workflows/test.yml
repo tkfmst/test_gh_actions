@@ -1,0 +1,13 @@
+on:
+  pull_request:
+    branches:
+      - 'release'
+jobs:
+  gh-test:
+    - name: test custom actions
+      uses: actions/checkout@v3
+    - name: gh-test
+      uses: tkfmst/gh_action_add_pr_linked_milestone@v0.1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
