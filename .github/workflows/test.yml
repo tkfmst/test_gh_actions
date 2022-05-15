@@ -5,6 +5,7 @@ on:
 jobs:
   gh-test:
     name: gh-test
+    runs-on: ubuntu-latest
     steps:
       - name: test custom actions
         uses: actions/checkout@v3
