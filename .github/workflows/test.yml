@@ -7,10 +7,7 @@ jobs:
     name: gh-test
     runs-on: ubuntu-latest
     steps:
-      - name: test custom actions
-        uses: actions/checkout@v3
       - name: gh-test
-        uses: tkfmst/gh_action_add_pr_linked_milestone@v0.1.1
+        uses: tkfmst/gh_action_add_pr_linked_milestone@v0.1.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
