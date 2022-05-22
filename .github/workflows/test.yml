@@ -7,7 +7,7 @@ jobs:
     name: gh-test
     runs-on: ubuntu-latest
     steps:
-      - name: gh-test2
+      - name: gh-test3
         uses: tkfmst/gh_action_add_pr_linked_milestone@v0.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
