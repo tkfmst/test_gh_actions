@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: gh-test4
-        uses: tkfmst/gh_action_add_pr_linked_milestone@v0.1
+        uses: tkfmst/gh_action_add_pr_linked_milestone@v0.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
